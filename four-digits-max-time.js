@@ -22,6 +22,8 @@ function solution(A, B, C, D) {
     for (var i = 0; i < compinations.length; i++) {
         for (var j = 0; j < compinations.length; j++) {
             if ( i == j) continue;
+            // TODO:: calculate the clock sum from two compoinations i,j & j,i and choose the better. 
+            // then you can ignore iterate over all elements i.e j = i + 1
             var hoursSum = clockSum(compinations[i], compinations[j]);
             if (hoursSum >= 0 && hoursSum <= 23 && hoursSum > maxHours) {
                 chosenHoursIds = [i, j];
