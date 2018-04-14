@@ -81,4 +81,14 @@ function solution(S) {
     return result;
 }
 
-solution('00:01:07,400-234-090\n00:05:01,701-080-080\n00:05:00,400-234-090')
+
+
+function testSolution() {
+
+    var count = 0;
+    var testCases = 1;
+    if (solution('00:01:07,400-234-090\n00:05:01,701-080-080\n00:05:00,400-234-090') === 900) {
+        count++;
+    }
+    return 'Passed ' + count + ' of ' + testCases;
+}

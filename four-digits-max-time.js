@@ -80,3 +80,4 @@ function testSolution() {
     }
     return 'Passed ' + count + ' of ' + testCases;
 }
+
